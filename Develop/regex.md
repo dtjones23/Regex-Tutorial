@@ -24,6 +24,9 @@ Since the regex is a literal, it must be wrapped in slash characters  // . This 
 ### Anchors
     ^ : Anchors the pattern at the beginning of the string
     $ : Anchors the pattern at the end of the string
+For our email-regex, the string must start and end with:
+
+    ([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]) 
 ### Quantifiers
     + : Matches one or more of the preceding token
 ### Character Classes
@@ -37,8 +40,10 @@ Since the regex is a literal, it must be wrapped in slash characters  // . This 
 ### Bracket Expressions
     [a-z0-9_\.-] : represents a character class that matches any of the characters inside of the brackets
 ### Greedy and Lazy Match
-    Outside of + which are greedy by default, there isn't a case of lazy in this expression
+    Outside of + which are greedy by default
+For our email-regex: there is not any case for lazy expressions; which seek to match as little as possible while still satisfying the overall pattern (Non-greedy).
 ### Boundaries
     ^ and $ act as boundaries that ensure the entire string match the pattern
+For our email-regex: the boundaries aides in making sure all the characters match respectively.
 ## Author
 I'm DeAngelo and am working towards becoming a fullstack developer. If interested, here is a link to view my work in Github: https://github.com/dtjones23
